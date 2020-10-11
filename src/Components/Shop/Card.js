@@ -3,6 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from './Table';
 
 export default class Card extends Component {
+    /* state= { 
+        ingredients: [],   
+    }   
+    componentDidMount(){
+        fetch('https://recipe-rissoto.now.sh/recipe')
+        .then((response)=> response.json())
+        .then((data)=> this.setState({ingredients:[...this.state.ingredients,data]}))
+    }  */
     render() {
         return (
             <div className="container" id="card">
