@@ -4,8 +4,8 @@ export default class Footer extends Component {
     render() {
         return (
             <div className="container-fluid" id="footer">
-                <div className="center">
-                <span id="span-foo">El mejor Rissoto de Medellín</span>        
+                <div className="navbar navbar-expand-lg p-3 mb-2 bg-warning text-dark">
+                    <a className="navbar-brand" href="#">El Mejor Rissoto de Medellín</a>
                 </div>
             </div>
         )

@@ -27,6 +27,7 @@
 
 #banner{
  /*  max-height: 50px; */
+  width: 110%;
 }
 
 #card{
@@ -34,7 +35,6 @@
 }
 
 #footer{
-  background-color: #282c34;
   color: white;
   margin-top: 100px;
 }

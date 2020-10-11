@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from './Table';
+import Modal from './Modal';
 
 export default class Card extends Component {
     /* state= { 
@@ -26,15 +27,15 @@ export default class Card extends Component {
             
             <div>
                 <div>
-                    <h2>Items:</h2>
-                    <h2>Subtotal:</h2>
-                    <h2>Gastos de Envio:</h2>
-                    <h2>Total:</h2>
+                    <h6>Items:</h6>
+                    <h6>Subtotal:</h6>
+                    <h6>Gastos de Envio:</h6>
+                    <h6>Total:</h6>
                 </div>
-            <button type="button" class="btn btn-success">Comprar Ingredientes</button>
+            <button type="button" id="modal" class="btn btn-success" onClick={this.props.modal}>Comprar Ingredientes</button>
             </div>
 
-            <div className="modal" tabindex="-1">
+            <div className="modal" tabindex="-1" id="modal">
                 <div className="modal-dialog">
                     <div className="modal-content">
                     <div className="modal-header">
