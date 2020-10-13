@@ -6,6 +6,7 @@ import Banner from './Components/Shop/Banner'
 import Card from './Components/Shop/Card'
 import Modals from './Components/Shop/Modals'
 import Footer from './Components/Shop/Footer';
+import Calculo from './Components/Shop/Calculo';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Card/>
+      <Calculo/>
       <Modals/>
       <Footer/>
     </div>

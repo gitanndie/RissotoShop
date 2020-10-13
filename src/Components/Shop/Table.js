@@ -15,9 +15,10 @@ export default class Table extends Component {
             <div>
                 <table className="table table-striped">
                 <thead>
-                    <td>Items</td>
-                    <td>Ingrediente</td>
-                    <td>Precio</td>
+                    <td>Items: </td>
+                    <td>Ingrediente: </td>
+                    <td>Precio: </td>
+                    <td>Cantidad: </td>
                 </thead>
                 <tbody>
                 {this.state.ingredients.length > 0 && this.state.ingredients.map(ingredient=> (
@@ -27,9 +28,12 @@ export default class Table extends Component {
                             <input className="form-check-input" type="checkbox" id="gridCheck"/>
                             </div>
                         </div>
-                <th scope="col">{ingredient.product}</th>
-                <th scope="col">{ingredient.price}</th>
-                    <th scope="col"> </th>
+                        <th scope="col">{ingredient.product}</th>
+                        <th scope="col">{ingredient.price}</th>
+                        <th scope="col">
+                        <input type="number" name="quantityName" min="0.01" placeholder="01" required>
+                        </input>
+                        </th>
                     </tr>
                     ))}
                 </tbody>
