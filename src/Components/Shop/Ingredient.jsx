@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class Ingredient extends Component {
   constructor(props) {
     super(props);
@@ -21,12 +20,11 @@ class Ingredient extends Component {
   render() {
     return (
       <div className="container-fluid">
-            
         <div className="row">
           <div className="col-lg text-left">
             <input type="checkbox" checked={this.state.active} onClick={() => this.handleClick()} />
             <div>
-              <h6 className="item">{this.props.items}</h6>
+              <h6>{this.props.items}</h6>
             </div>
             <div>
               <h5>{this.props.product}</h5>

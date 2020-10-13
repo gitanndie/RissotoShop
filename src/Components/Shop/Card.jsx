@@ -4,7 +4,6 @@ import Ingredient from './Ingredient';
 import Price from './Price';
 import Out from './Out';
 import axios from 'axios';
-
 class Card extends Component {
   constructor(props) {
     super(props);

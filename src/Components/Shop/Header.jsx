@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -8,15 +7,15 @@ class Header extends Component {
   render() {
     return (
       <div className="container">
-        <h2 className="texto-ingredientes text-left">
+        <h2 className="text-left">
           Ingredientes
         </h2>
-        <h1 className="text-nombre-plato text-left">
+        <h1 className="text-left">
           { this.props.name }
         </h1>
         <div className="row">
           <div className="col-md-12">
-            <p className="texto-seleccionar-todo text-left">  
+            <p className="text-left">  
             <a href="">Seleccionar todo</a> | <a href="">Deseleccionar todo</a> </p>
           </div>
         </div>
