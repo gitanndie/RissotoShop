@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Shop/Navbar'
 import Banner from './Components/Shop/Banner'
 import Card from './Components/Shop/Card'
+import Modals from './Components/Shop/Modals'
 import Footer from './Components/Shop/Footer';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Card/>
+      <Modals/>
       <Footer/>
     </div>
   );
